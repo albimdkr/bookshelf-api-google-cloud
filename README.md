@@ -1,25 +1,44 @@
 # Belajar Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google Cloud 📚
 
-Technologi yang digunakan 💻
+Bahasa Pemrograman 💻
 - JavaScript
-- [Nodejs](https://nodejs.org/en)
+
+JavaScript Runtime Enviroment ⚙
+- [Node.js ](https://nodejs.org/en)
 > **Note:** Wajib menggunakan nodejs  **v18.13.0** .
 > Cara downgrade menggunakan [nvm](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/)
 
 Framework ⚡
 - [HapiJs](https://hapi.dev/)
 
+Node Package Manager (NPM)📦
+- @hapi/hapi
+- nanoid
+- nodemon
+- Eslint Sytle AirBnB
+
 Kriteria ✔
 - Port: 9000
-- Aplikasi dijalankan dengan perintah npm run start
-- API dapat menyimpan buku
-- API dapat menampilkan seluruh buku: POST
+- Aplikasi dijalankan dengan perintah npm run start-dev
+- API dapat menyimpan buku: POST
+- API dapat menampilkan seluruh buku: GET
 - API dapat menampilkan detail buku: GET
 - API dapat mengubah data buku: PUT
 - API dapat menghapus buku: DELETE
 
-Pengujian
+Testing API🔎
 - [Postman bookshelf Collection & enviroment](https://github.com/dicodingacademy/a261-backend-pemula-labs/raw/099-shared-files/BookshelfAPIT)
+
+Install testing tool **newman** (alternative postman)
+```
+npm install newman --g
+```
+
+Synchronisasi JSON collection & Enviroment dari Postman, lalu
+Berikan perintah kedalam terminal
+```
+newman run bookshelf-test-postman_collection.json --environment bookshelf-test-postman_environment.json
+```
 
 # Conventional Commits
 Sumber: conventionalcommits.org

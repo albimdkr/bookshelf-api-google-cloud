@@ -1,7 +1,7 @@
 const { nanoid } = require('nanoid');
 
 //OOP Paradigm
-class dataBook {
+class DataBook {
     constructor(masukan) {
         //Deklarasi kebutuhan ketentua data
         this.id = nanoid(10);
@@ -48,4 +48,4 @@ class dataBook {
     }
 }
 
-module.exports = dataBook;
+module.exports = DataBook;

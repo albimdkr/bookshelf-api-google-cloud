@@ -1,11 +1,11 @@
-const successResponse = ({ messageRes = '', dataRes = {} }) => ({
+const successRes = ({ messageRes = '', dataRes = {} }) => ({
     status: 'success',
     message: messageRes,
     data: dataRes,
 });
 
-const failResponse = ({ messageRes = '', dataRes = {}, withData = true }) => {
-    if (withData) {
+const failRes = ({ messageRes = '', dataRes = {}, therIsData = true }) => {
+    if (therIsData) {
         return {
             status: 'fail',
             message: messageRes,
@@ -19,15 +19,15 @@ const failResponse = ({ messageRes = '', dataRes = {}, withData = true }) => {
     };
 };
 
-const errorResponse = (messageRes = '') => ({
+const errorRes = (messageRes = '') => ({
     status: 'error',
     message: messageRes,
 });
 
 module.exports = {
-    successResponse,
-    failResponse,
-    errorResponse
+    successRes,
+    failRes,
+    errorRes
 };
 
 

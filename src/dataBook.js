@@ -46,6 +46,15 @@ class DataBook {
     getPublisher() {
         return {publisher: this.publisher};
     }
+
+    //Gabungkan
+    getIdNamePublisher() {
+        return {
+          id: this.id,
+          name: this.name,
+          publisher: this.publisher,
+        };
+      }
 }
 
 module.exports = DataBook;

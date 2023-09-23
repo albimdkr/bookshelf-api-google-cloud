@@ -1,0 +1,11 @@
+{
+  "name": "bookshelf-api-googlecloud",
+  "version": "1.0.0",
+  "description": "Ujian Akhir Belajar Membuat Aplikasi Back-End untuk Pemula dengan Google Cloud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Albi Mudakar Nasyabi",
+  "license": "ISC"
+}

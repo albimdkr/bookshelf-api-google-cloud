@@ -29,6 +29,11 @@ const routes = [
         method: 'DELETE',
         path: '/books/{bookId}',
         handler: deleteBookByIdHandler,
+    },
+    {
+        method: '*',
+        path:'/{any}',
+        handler: () => 'Halaman tidak ditemukan',
     }
 ];
 

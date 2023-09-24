@@ -5,13 +5,14 @@ class DataBook {
     constructor(masukan) {
         //Deklarasi kebutuhan ketentua data
         this.id = nanoid(10);
-        this.name = masukan.year;
+        this.name = masukan.name;
+        this.year = masukan.year;
         this.author = masukan.author;
         this.summary = masukan.summary;
         this.publisher = masukan.publisher;
         this.pageCount = masukan.pageCount;
         this.readPage = masukan.readPage;
-        this.finished = masukan.finished;
+        this.finished =  masukan.readPage === masukan.pageCount;
         this.reading = masukan.reading;
 
         //Deklarasi data waktu

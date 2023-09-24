@@ -2,7 +2,7 @@ const DataBook = require('../dataBook');
 const books = require('../books');
 const { successRes, failRes, errorRes } = require('../response');
 
-const getBookByIdHandler = ( request, h) => {
+const getBookByIdHandler = (request, h) => {
     const { bookId } = request.params;
     const bookById = books.get(bookId);
     if (bookId !== undefined) {
@@ -13,6 +13,5 @@ const getBookByIdHandler = ( request, h) => {
         return h.response(successRes({ dataRes: { book: bookById }})).code(200);
     }
 };
-
 
 module.exports = { getBookByIdHandler };

@@ -13,7 +13,7 @@ const deleteBookByIdHandler = (request, h) => {
 
     books.delete(bookId);
     const message = 'Buku berhasil dihapus';
-    return h.response(successRes({ responseMessage: message})).code(200);
+    return h.response(successRes({ messageRes: message})).code(200);
 }
 
 module.exports = { deleteBookByIdHandler };

@@ -1,4 +1,6 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable consistent-return */
+/* eslint-disable linebreak-style */
 const books = require('../books');
 const { successRes, failRes } = require('../response');
 
